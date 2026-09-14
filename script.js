@@ -23,3 +23,23 @@ document.querySelectorAll('.paper-nav a[href^="#"]').forEach((link) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+function setLivePaperDate() {
+  const el = document.getElementById("paper-date");
+  if (!el) return;
+  const now = new Date();
+  const iso = [
+    now.getFullYear(),
+    String(now.getMonth() + 1).padStart(2, "0"),
+    String(now.getDate()).padStart(2, "0"),
+  ].join("-");
+  el.setAttribute("datetime", iso);
+  el.textContent = now.toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+setLivePaperDate();
