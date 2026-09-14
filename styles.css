@@ -146,20 +146,21 @@ a:hover {
 
 .bugle-emblem-wrap {
   flex-shrink: 0;
-  background: #000;
-  transform: skewX(-12deg);
-  padding: 0.2rem 0.45rem;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.35);
+  background: transparent;
+  transform: none;
+  padding: 0;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .bugle-emblem {
-  width: clamp(64px, 12vw, 100px);
+  width: clamp(70px, 13vw, 108px);
   height: auto;
   display: block;
-  transform: skewX(12deg);
+  transform: none;
+  filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, 0.35));
 }
 
 .bugle-sub {
