@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE DAILY BUGLE | Aryan Mandapati</title>
+  <meta name="description" content="Portfolio of Aryan Mandapati, CS at UT Dallas. Projects, experience, clubs, and credentials. Daily Bugle edition." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/bugle-mark.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="web-corner web-corner-tl" aria-hidden="true"></div>
+  <div class="web-corner web-corner-tr" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <span class="edition">Dallas Desk (with a soft spot for NYC)</span>
+      <span class="weather">Clear skies. One web-slinger rumor. Open to work.</span>
+      <span class="price">Vol. I · No. 404 · EXTRA!</span>
+    </div>
+
+    <div class="masthead-brand">
+      <img class="bugle-logo" src="assets/bugle-mark.svg" width="88" height="88" alt="Daily Bugle mark" />
+      <div class="masthead-text">
+        <p class="bugle-tag">Photo ops welcome. Wall crawling optional.</p>
+        <h1 class="bugle-title">
+          <span class="bugle-the">The</span>
+          Daily Bugle
+        </h1>
+        <p class="bugle-sub">ARYAN MANDAPATI · PORTFOLIO EDITION</p>
+      </div>
+    </div>
+
+    <nav class="paper-nav" aria-label="Sections">
+      <a href="#front-page">Front Page</a>
+      <a href="#city-desk">City Desk</a>
+      <a href="#dispatches">Dispatches</a>
+      <a href="#society">Society</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#classifieds">Classifieds</a>
+      <a href="#letters">Letters</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="skyline-strip reveal" aria-label="New York City skyline">
+      <img
+        src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1600&q=80"
+        alt="New York City skyline at dusk"
+        width="1600"
+        height="420"
+      />
+      <p class="skyline-caption">File photo: Midtown Manhattan. Home of the Bugle. Not where Aryan lives, but the vibe still counts.</p>
+    </section>
+
+    <section id="front-page" class="front-page">
+      <div class="front-meta">
+        <span class="stamp">BREAKING</span>
+        <time datetime="2026-09-13">Sunday, September 13, 2026</time>
+      </div>
+
+      <article class="lede reveal">
+        <p class="kicker">Exclusive · Legal tech beat</p>
+        <h2 class="mega-headline">
+          LOCAL DEV BUILDS A LEGAL RAG THAT ACTUALLY SHOWS ITS WORK
+        </h2>
+        <p class="byline">By Staff Writer · Special to The Daily Bugle</p>
+
+        <div class="lede-grid">
+          <div class="lede-copy">
+            <p class="drop-cap">
+              Aryan Mandapati put together a legal RAG pipeline that turns U.S. statutes into clear rules you can check. Every rule points back to a real section of law. If the model tries to invent a citation, the system flags it.
+            </p>
+            <p>
+              You pick a domain, jurisdiction, and rule type. The app retrieves matching provisions (BM25 by default, dense retrieval if you want it), then drafts rules only from that text. Each run leaves a full trace in Langfuse and a local JSONL file, so you can see retrieval, generation, and grounding checks step by step.
+            </p>
+            <p>
+              Built with Python, Streamlit, Claude, and pytest. It also runs offline with an extractive fallback, no API keys required.
+            </p>
+            <div class="lede-actions">
+              <a class="btn-ink" href="https://github.com/AryanManda/legal-rag" target="_blank" rel="noopener">Open the repo</a>
+              <span class="tag-chip">Front page · Dispatch #1</span>
+            </div>
+          </div>
+          <aside class="lede-sidebar">
+            <figure class="photo-box">
+              <img
+                src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=800&q=80"
+                alt="Brooklyn Bridge and Lower Manhattan"
+                width="800"
+                height="520"
+              />
+              <figcaption>Brooklyn Bridge looking toward Lower Manhattan. Classic Bugle backdrop.</figcaption>
+            </figure>
+            <div class="sidebar-box">
+              <h3>THE FACTS</h3>
+              <ul>
+                <li>Guided domain and jurisdiction picks</li>
+                <li>Rules tied to real citations</li>
+                <li>Grounding checks on every answer</li>
+                <li>Langfuse plus local traces</li>
+                <li>Retriever eval workbench</li>
+              </ul>
+            </div>
+            <div class="sidebar-box ink-red">
+              <h3>EDITOR'S NOTE</h3>
+              <p>"Great power, great responsibility, and please cite your sources."</p>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <hr class="rule-double" />
+
+    <section class="who-strip reveal">
+      <div class="who-portrait">
+        <img src="https://avatars.githubusercontent.com/u/123598225?v=4" alt="Aryan Mandapati" width="160" height="160" />
+        <p class="photo-credit">File photo · GitHub</p>
+      </div>
+      <div class="who-copy">
+        <h2 class="section-head">WHO IS THIS GUY?</h2>
+        <p>
+          Computer Science student at <strong>The University of Texas at Dallas</strong>. Based around Dallas and Fulshear, TX.
+          I build full-stack apps, AI tools, and the messy middle that makes them actually usable. Right now I am an
+          <strong>AI Platform Engineer at OSI Digital</strong>.
+        </p>
+        <p>
+          Friendly neighborhood engineer energy. Less swinging from buildings, more shipping code that holds up under review.
+        </p>
+        <p class="who-links">
+          <a href="https://github.com/AryanManda" target="_blank" rel="noopener">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/aryan-mandapati-0231a628b/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+    <hr class="rule-double" />
+
+    <section id="city-desk" class="city-desk">
+      <h2 class="section-head reveal">CITY DESK · BEATS AND BYLINES</h2>
+      <div class="experience-grid">
+        <article class="exp-card reveal">
+          <span class="exp-label">CURRENT</span>
+          <h3>AI Platform Engineer</h3>
+          <p class="exp-org">OSI Digital</p>
+          <p>Working on AI platform work for clients going through digital transformation.</p>
+        </article>
+        <article class="exp-card reveal">
+          <span class="exp-label">ENGINEERING</span>
+          <h3>Software Engineer</h3>
+          <p class="exp-org">R1649 Equity Partners</p>
+          <p>Software engineering across product and platform work.</p>
+        </article>
+        <article class="exp-card reveal">
+          <span class="exp-label">PROGRAM</span>
+          <h3>EY Expedition</h3>
+          <p class="exp-org">Ernst &amp; Young</p>
+          <p>Professional program with one of the Big Four.</p>
+        </article>
+        <article class="exp-card reveal">
+          <span class="exp-label">SUMMER</span>
+          <h3>Technology Summer Engagement</h3>
+          <p class="exp-org">Paycom</p>
+          <p>Got a close look at payroll tech and how a large engineering org moves.</p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="rule-double" />
+
+    <section id="dispatches" class="dispatches">
+      <div class="dispatches-head reveal">
+        <h2 class="section-head">MORE DISPATCHES FROM THE FIELD</h2>
+        <p class="section-dek">Selected builds. Strongest stories first after the front page.</p>
+      </div>
+
+      <div class="project-broadsheet">
+        <article class="proj proj-feature reveal" data-num="02">
+          <span class="proj-num">02</span>
+          <p class="kicker">HackUTD special report</p>
+          <h3>SYNTRIA: ONBOARDING AND RISK SCORING, RUN BY SPECIALIZED AGENTS</h3>
+          <p>
+            Built at HackUTD for product and compliance teams. Syntria handles vendor onboarding, scores risk with Gemini,
+            and routes low, medium, and high cases differently. It also helps PMs with strategy, sprint planning, and task drafts.
+            We showed it to folks from PNC and Goldman Sachs.
+          </p>
+          <p class="proj-stack">Vite · React · TypeScript · Tailwind · Gemini · ElevenLabs</p>
+          <a class="btn-ink ghost" href="https://github.com/AryanManda/Syntriav2" target="_blank" rel="noopener">Open the repo</a>
+        </article>
+
+        <div class="proj-columns">
+          <article class="proj reveal" data-num="03">
+            <span class="proj-num">03</span>
+            <h3>EZPARK</h3>
+            <p>
+              Parking lots go digital. Owners manage spots. Drivers search nearby, reserve by vehicle type, check in and out, and pay.
+            </p>
+            <p class="proj-stack">JavaScript · Full-stack</p>
+            <a href="https://github.com/AryanManda/EZPARK" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="04">
+            <span class="proj-num">04</span>
+            <h3>DEMANDSYNC</h3>
+            <p>
+              Demand forecasting for inventory calls. A Prophet model looks at order history, then a React dashboard shows the next
+              30 days and flags when stock should move up or down.
+            </p>
+            <p class="proj-stack">React · Flask · Prophet · Recharts</p>
+            <a href="https://github.com/AryanManda/DemandSync" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="05">
+            <span class="proj-num">05</span>
+            <h3>HADAL POOL</h3>
+            <p>
+              Private liquidity pools on-chain. Deposits and withdrawals stay separated so settlement is harder to link in public indexes.
+            </p>
+            <p class="proj-stack">Solidity · TypeScript · React</p>
+            <a href="https://github.com/AryanManda/Hadal-Pool" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="06">
+            <span class="proj-num">06</span>
+            <h3>BREEDWISE</h3>
+            <p>
+              Helps ranchers plan breeding with herd records, lineage views, and Gemini-backed trait analysis. Live on Vercel.
+            </p>
+            <p class="proj-stack">React · TypeScript · Gemini · Express</p>
+            <a href="https://breedwise-six.vercel.app" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/AryanManda/Breedwise" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="07">
+            <span class="proj-num">07</span>
+            <h3>MEDPATH</h3>
+            <p>
+              Mobile-first health companion with a dashboard, activities, predictions, and a discover tab.
+            </p>
+            <p class="proj-stack">React · Vite · JavaScript</p>
+            <a href="https://med-path-one.vercel.app" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/AryanManda/MedPath" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="08">
+            <span class="proj-num">08</span>
+            <h3>NXT LEVEL SPACES</h3>
+            <p>
+              Venue site for a multi-use space. Photo galleries, amenities, and an inquiry flow for bookings and events.
+            </p>
+            <p class="proj-stack">TypeScript · React · Express</p>
+            <a href="https://nxtlevelspaces.vercel.app" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/AryanManda/nxtlevelspaces" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="09">
+            <span class="proj-num">09</span>
+            <h3>SOLACE</h3>
+            <p>
+              A calm chat UI for an AI therapist backed by Gemini. Built to feel quiet and private, not flashy.
+            </p>
+            <p class="proj-stack">HTML · Flask · Gemini</p>
+            <a href="https://github.com/AryanManda/Solace" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="10">
+            <span class="proj-num">10</span>
+            <h3>WILDFIRE TRACKER</h3>
+            <p>
+              Map of live NASA EONET events. Wildfires and other natural disasters plotted as they come in.
+            </p>
+            <p class="proj-stack">React · NASA EONET API</p>
+            <a href="https://github.com/AryanManda/WildFire-Tracker" target="_blank" rel="noopener">GitHub</a>
+          </article>
+
+          <article class="proj reveal" data-num="11">
+            <span class="proj-num">11</span>
+            <h3>IMAGE CLASSIFICATION</h3>
+            <p>
+              TensorFlow and OpenCV notebook pipeline for training and testing custom image classifiers.
+            </p>
+            <p class="proj-stack">Python · TensorFlow · OpenCV</p>
+            <a href="https://github.com/AryanManda/Image-Classification" target="_blank" rel="noopener">GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule-double" />
+
+    <section id="society" class="society">
+      <h2 class="section-head reveal">SOCIETY PAGES · CLUBS AND CAMPUS</h2>
+      <div class="society-grid">
+        <article class="society-card reveal">
+          <h3>Artificial Intelligence Society @ UTD</h3>
+          <p class="exp-org">Mentee</p>
+          <p>Mentorship and projects through AIS, focused on making AI less mysterious for students.</p>
+        </article>
+        <article class="society-card reveal">
+          <h3>ACM @ UTD</h3>
+          <p class="exp-org">Member</p>
+          <p>Association for Computing Machinery chapter. Workshops, peers, and the usual CS campus circuit.</p>
+        </article>
+        <article class="society-card reveal">
+          <h3>HackUTD</h3>
+          <p class="exp-org">Builder · Syntria</p>
+          <p>Shipped a multi-agent onboarding and risk platform under hackathon pressure.</p>
+        </article>
+        <article class="society-card reveal">
+          <h3>The University of Texas at Dallas</h3>
+          <p class="exp-org">B.S. Computer Science</p>
+          <p>Erik Jonsson School of Engineering and Computer Science. Richardson, TX.</p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="rule-double" />
+
+    <section id="credentials" class="credentials">
+      <h2 class="section-head reveal">PRESS CREDENTIALS · CERTS ON FILE</h2>
+      <p class="section-dek">From LinkedIn. Happy to send badge links if someone on the hiring desk asks.</p>
+      <div class="cred-grid">
+        <article class="cred-card reveal">
+          <span class="cred-issuer">Python Institute</span>
+          <h3>PCEP-30-02</h3>
+          <p>Certified Entry-Level Python Programmer · Aug 2024</p>
+        </article>
+        <article class="cred-card reveal">
+          <span class="cred-issuer">ServiceNow</span>
+          <h3>Welcome to ServiceNow</h3>
+          <p>Micro-certification covering the platform basics.</p>
+        </article>
+        <article class="cred-card reveal">
+          <span class="cred-issuer">Codecademy</span>
+          <h3>Learn JavaScript</h3>
+          <p>Course certificate · Apr 2023</p>
+        </article>
+      </div>
+      <p class="cred-note">
+        Full list lives on
+        <a href="https://www.linkedin.com/in/aryan-mandapati-0231a628b/details/certifications/" target="_blank" rel="noopener">LinkedIn certifications</a>.
+      </p>
+    </section>
+
+    <hr class="rule-double" />
+
+    <section id="classifieds" class="classifieds">
+      <h2 class="section-head reveal">CLASSIFIEDS · SKILLS ON OFFER</h2>
+      <div class="classified-columns reveal">
+        <div class="class-col">
+          <h3>LANGUAGES</h3>
+          <p>Python · TypeScript · JavaScript · Java · Solidity · HTML/CSS · SQL</p>
+        </div>
+        <div class="class-col">
+          <h3>FRAMEWORKS</h3>
+          <p>React · Vite · Node/Express · Flask · Streamlit · Tailwind · TensorFlow</p>
+        </div>
+        <div class="class-col">
+          <h3>AI AND DATA</h3>
+          <p>RAG · BM25 · Gemini · Claude · Langfuse · Prophet · OpenCV</p>
+        </div>
+        <div class="class-col">
+          <h3>PLATFORM</h3>
+          <p>Git · GitHub · Vercel · REST APIs · Observability · Full-stack delivery</p>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>EXTRA EXTRA · FULL-STACK AND AI · OPEN TO OPPORTUNITIES · DALLAS OR REMOTE · YOUR FRIENDLY NEIGHBORHOOD ENGINEER REPORTING FOR DUTY · </span>
+          <span>EXTRA EXTRA · FULL-STACK AND AI · OPEN TO OPPORTUNITIES · DALLAS OR REMOTE · YOUR FRIENDLY NEIGHBORHOOD ENGINEER REPORTING FOR DUTY · </span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule-double" />
+
+    <section id="letters" class="letters reveal">
+      <div class="letters-photo">
+        <img
+          src="https://images.unsplash.com/photo-1518391846015-55a9cc669c11?auto=format&fit=crop&w=1200&q=80"
+          alt="Times Square at night"
+          width="1200"
+          height="480"
+        />
+      </div>
+      <h2 class="section-head">LETTERS TO THE EDITOR</h2>
+      <p class="letters-dek">
+        Got a role, internship, or project that needs someone who ships? Reach out. I answer my own mail. No Jonah required.
+      </p>
+      <div class="contact-row">
+        <a class="btn-ink" href="https://www.linkedin.com/in/aryan-mandapati-0231a628b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn-ink ghost" href="https://github.com/AryanManda" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="fine-print">All the news that is fit to ship. Aryan Mandapati Portfolio Edition.</p>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <p>
+      Inspired by Spider-Man's favorite paper. Not affiliated with Marvel or Sony.
+      Logo mark is an original Bugle-style emblem for this portfolio.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
