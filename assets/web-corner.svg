@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" aria-hidden="true">
+  <!-- Classic full spun spider web from corner origin -->
+  <g stroke="#111" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- radial threads -->
+    <g stroke-width="1.8" opacity="0.55">
+      <path d="M0 0 L240 0"/>
+      <path d="M0 0 L230 40"/>
+      <path d="M0 0 L210 85"/>
+      <path d="M0 0 L175 135"/>
+      <path d="M0 0 L130 180"/>
+      <path d="M0 0 L80 215"/>
+      <path d="M0 0 L35 235"/>
+      <path d="M0 0 L0 240"/>
+      <path d="M0 0 L200 20"/>
+      <path d="M0 0 L190 60"/>
+      <path d="M0 0 L150 155"/>
+      <path d="M0 0 L55 225"/>
+    </g>
+    <!-- spiral rings -->
+    <g stroke-width="1.35" opacity="0.5">
+      <path d="M22 0 Q24 18 0 22"/>
+      <path d="M48 0 Q52 40 0 48"/>
+      <path d="M78 0 Q84 66 0 78"/>
+      <path d="M112 0 Q122 96 0 112"/>
+      <path d="M150 0 Q164 130 0 150"/>
+      <path d="M190 0 Q208 166 0 190"/>
+      <path d="M228 0 Q236 120 210 180 Q170 230 0 228"/>
+    </g>
+    <!-- connecting segments for spun look -->
+    <g stroke-width="1.1" opacity="0.42">
+      <path d="M48 0 L52 18 L40 40 L18 52 L0 48"/>
+      <path d="M78 0 L84 28 L70 58 L42 78 L0 78"/>
+      <path d="M112 0 L122 40 L105 82 L62 112 L0 112"/>
+      <path d="M150 0 L164 55 L142 110 L85 150 L0 150"/>
+      <path d="M190 0 L208 70 L180 140 L110 190 L0 190"/>
+    </g>
+  </g>
+</svg>

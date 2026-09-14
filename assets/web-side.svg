@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 600" fill="none" aria-hidden="true">
+  <!-- Side-running spun web edge -->
+  <g stroke="#111" stroke-linecap="round" fill="none" opacity="0.45">
+    <path stroke-width="1.6" d="M0 0 L0 600"/>
+    <path stroke-width="1.2" d="M0 40 Q28 55 0 80"/>
+    <path stroke-width="1.2" d="M0 100 Q36 120 0 145"/>
+    <path stroke-width="1.2" d="M0 170 Q42 195 0 225"/>
+    <path stroke-width="1.2" d="M0 255 Q34 280 0 310"/>
+    <path stroke-width="1.2" d="M0 340 Q40 365 0 395"/>
+    <path stroke-width="1.2" d="M0 425 Q30 450 0 480"/>
+    <path stroke-width="1.2" d="M0 505 Q38 530 0 560"/>
+    <path stroke-width="1" d="M0 60 L22 70"/>
+    <path stroke-width="1" d="M0 125 L28 138"/>
+    <path stroke-width="1" d="M0 200 L32 215"/>
+    <path stroke-width="1" d="M0 285 L26 298"/>
+    <path stroke-width="1" d="M0 370 L30 385"/>
+    <path stroke-width="1" d="M0 455 L24 468"/>
+    <path stroke-width="1" d="M0 535 L28 548"/>
+  </g>
+</svg>
