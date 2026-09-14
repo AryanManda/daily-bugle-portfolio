@@ -144,12 +144,22 @@ a:hover {
   user-select: none;
 }
 
-.bugle-emblem {
-  width: clamp(72px, 14vw, 118px);
-  height: auto;
+.bugle-emblem-wrap {
   flex-shrink: 0;
+  background: #000;
+  transform: skewX(-12deg);
+  padding: 0.2rem 0.45rem;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bugle-emblem {
+  width: clamp(64px, 12vw, 100px);
+  height: auto;
   display: block;
-  filter: drop-shadow(2px 3px 0 rgba(0, 0, 0, 0.55));
+  transform: skewX(12deg);
 }
 
 .bugle-sub {
