@@ -9,30 +9,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@500;600;700&family=Special+Elite&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/bugle-mark.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/daily-bugle-logo.png" type="image/png" />
 </head>
 <body>
   <div class="paper-grain" aria-hidden="true"></div>
-  <div class="web-corner web-corner-tl" aria-hidden="true"></div>
-  <div class="web-corner web-corner-tr" aria-hidden="true"></div>
+  <div class="web-layer" aria-hidden="true">
+    <img class="web-shoot web-shoot-a" src="assets/web-shoot.svg" alt="" />
+    <img class="web-shoot web-shoot-b" src="assets/web-shoot.svg" alt="" />
+  </div>
 
   <header class="masthead">
     <div class="masthead-top">
-      <span class="edition">Dallas Desk (with a soft spot for NYC)</span>
-      <span class="weather">Clear skies. One web-slinger rumor. Open to work.</span>
+      <span class="edition">Dallas Desk</span>
+      <span class="weather">Spider-sense: mild. Hiring outlook: strong.</span>
       <span class="price">Vol. I · No. 404 · EXTRA!</span>
     </div>
 
     <div class="masthead-brand">
-      <img class="bugle-logo" src="assets/bugle-mark.svg" width="88" height="88" alt="Daily Bugle mark" />
-      <div class="masthead-text">
-        <p class="bugle-tag">Photo ops welcome. Wall crawling optional.</p>
-        <h1 class="bugle-title">
-          <span class="bugle-the">The</span>
-          Daily Bugle
-        </h1>
-        <p class="bugle-sub">ARYAN MANDAPATI · PORTFOLIO EDITION</p>
-      </div>
+      <img class="bugle-logo-banner" src="assets/daily-bugle-logo.png" width="900" height="220" alt="The Daily Bugle" />
+      <p class="bugle-sub">ARYAN MANDAPATI · PORTFOLIO EDITION · YOUR FRIENDLY NEIGHBORHOOD ENGINEER</p>
+    </div>
+
+    <div class="spidey-stripe" aria-hidden="true">
+      <span>WEB-HEAD APPROVED COPY</span>
+      <span>·</span>
+      <span>NO MASKED MENACES ON STAFF</span>
+      <span>·</span>
+      <span>J. JONAH WOULD STILL YELL</span>
     </div>
 
     <nav class="paper-nav" aria-label="Sections">
@@ -47,19 +50,15 @@
   </header>
 
   <main>
-    <section class="skyline-strip reveal" aria-label="New York City skyline">
-      <img
-        src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1600&q=80"
-        alt="New York City skyline at dusk"
-        width="1600"
-        height="420"
-      />
-      <p class="skyline-caption">File photo: Midtown Manhattan. Home of the Bugle. Not where Aryan lives, but the vibe still counts.</p>
+    <section class="skyline-strip reveal" aria-label="Dallas skyline">
+      <img src="assets/dallas.png" alt="Dallas skyline at dusk with Reunion Tower" width="1400" height="420" />
+      <p class="skyline-caption">Home base: Dallas. Where the stories get written before the web-slinging rumors start.</p>
     </section>
 
     <section id="front-page" class="front-page">
       <div class="front-meta">
         <span class="stamp">BREAKING</span>
+        <span class="stamp stamp-blue">WEB-SLINGER EXCLUSIVE</span>
         <time datetime="2026-09-13">Sunday, September 13, 2026</time>
       </div>
 
@@ -85,17 +84,15 @@
               <a class="btn-ink" href="https://github.com/AryanManda/legal-rag" target="_blank" rel="noopener">Open the repo</a>
               <span class="tag-chip">Front page · Dispatch #1</span>
             </div>
+            <div class="spotted-box">
+              <h3>SPOTTED</h3>
+              <p>
+                Sources say a certain wall-crawler still reads the Bugle. This engineer does too, then goes back to shipping features.
+                Great power. Great responsibility. Clean git history preferred.
+              </p>
+            </div>
           </div>
           <aside class="lede-sidebar">
-            <figure class="photo-box">
-              <img
-                src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=800&q=80"
-                alt="Brooklyn Bridge and Lower Manhattan"
-                width="800"
-                height="520"
-              />
-              <figcaption>Brooklyn Bridge looking toward Lower Manhattan. Classic Bugle backdrop.</figcaption>
-            </figure>
             <div class="sidebar-box">
               <h3>THE FACTS</h3>
               <ul>
@@ -110,7 +107,31 @@
               <h3>EDITOR'S NOTE</h3>
               <p>"Great power, great responsibility, and please cite your sources."</p>
             </div>
+            <div class="sidebar-box ink-blue">
+              <h3>SPIDER-SENSE</h3>
+              <p>Hiring managers: this one builds systems that explain themselves. No mysterious masked code.</p>
+            </div>
           </aside>
+        </div>
+
+        <div class="dream-desks reveal">
+          <h3 class="dream-head">DREAM DESKS · WHERE THE BUGLE WOULD LOVE A BYLINE</h3>
+          <div class="dream-grid">
+            <figure class="dream-card">
+              <img src="assets/nyc.jpg" alt="New York City skyline" width="900" height="600" />
+              <figcaption>
+                <strong>New York</strong>
+                <span>Bugle HQ energy. Dream desk #1.</span>
+              </figcaption>
+            </figure>
+            <figure class="dream-card">
+              <img src="assets/sf.jpg" alt="San Francisco and Golden Gate Bridge" width="900" height="600" />
+              <figcaption>
+                <strong>San Francisco</strong>
+                <span>Bay Area beat. Dream desk #2.</span>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </article>
     </section>
@@ -131,6 +152,7 @@
         </p>
         <p>
           Friendly neighborhood engineer energy. Less swinging from buildings, more shipping code that holds up under review.
+          If my spider-sense tingles, it is usually a bad merge conflict.
         </p>
         <p class="who-links">
           <a href="https://github.com/AryanManda" target="_blank" rel="noopener">GitHub</a>
@@ -372,8 +394,8 @@
       </div>
       <div class="ticker" aria-hidden="true">
         <div class="ticker-track">
-          <span>EXTRA EXTRA · FULL-STACK AND AI · OPEN TO OPPORTUNITIES · DALLAS OR REMOTE · YOUR FRIENDLY NEIGHBORHOOD ENGINEER REPORTING FOR DUTY · </span>
-          <span>EXTRA EXTRA · FULL-STACK AND AI · OPEN TO OPPORTUNITIES · DALLAS OR REMOTE · YOUR FRIENDLY NEIGHBORHOOD ENGINEER REPORTING FOR DUTY · </span>
+          <span>EXTRA EXTRA · FULL-STACK AND AI · OPEN TO OPPORTUNITIES · DALLAS OR REMOTE · YOUR FRIENDLY NEIGHBORHOOD ENGINEER REPORTING FOR DUTY · SPIDER-SENSE SAYS SHIP IT · </span>
+          <span>EXTRA EXTRA · FULL-STACK AND AI · OPEN TO OPPORTUNITIES · DALLAS OR REMOTE · YOUR FRIENDLY NEIGHBORHOOD ENGINEER REPORTING FOR DUTY · SPIDER-SENSE SAYS SHIP IT · </span>
         </div>
       </div>
     </section>
@@ -381,14 +403,6 @@
     <hr class="rule-double" />
 
     <section id="letters" class="letters reveal">
-      <div class="letters-photo">
-        <img
-          src="https://images.unsplash.com/photo-1518391846015-55a9cc669c11?auto=format&fit=crop&w=1200&q=80"
-          alt="Times Square at night"
-          width="1200"
-          height="480"
-        />
-      </div>
       <h2 class="section-head">LETTERS TO THE EDITOR</h2>
       <p class="letters-dek">
         Got a role, internship, or project that needs someone who ships? Reach out. I answer my own mail. No Jonah required.
@@ -403,8 +417,8 @@
 
   <footer class="colophon">
     <p>
-      Inspired by Spider-Man's favorite paper. Not affiliated with Marvel or Sony.
-      Logo mark is an original Bugle-style emblem for this portfolio.
+      Inspired by Spider-Man and The Daily Bugle. Not affiliated with Marvel or Sony.
+      Logo is an original Bugle-style masthead for this portfolio.
     </p>
   </footer>
 
